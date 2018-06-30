@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<header>
+  <style>
+    @font-face {
+  font-family: OpenSans-Regular;
+  src:url('https://colorlib.com/etc/lf/Login_v19/fonts/OpenSans/OpenSans-Regular.ttf'); 
+}
+.login-page{
+  text-align: center;
+  vertical-align: middle;
+  background: #e9faff;
+}
+.form {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    width : 360px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    height : 56px;
+    font-size: 16px;
+}
+
+input::placeholder{
+  font-size: 16px;
+  font-family: OpenSans-Regular;
+}
+
+button{
+   margin: 25px 0;
+   width: 100%;
+   padding: 12px;
+   background-color: #4272d7;
+   font-family: OpenSans-Regular;
+   font-size: 16px;
+   color : white;
+   height : 56px;
+}
+
+.header{
+  font-size: 30px;
+  font-family: OpenSans-Regular;
+  margin-top:0px;
+  color:#555555;
+}
+
+.message{
+  font-size: 15px;
+  font-family: OpenSans-Regular;
+  color: black;
+}
+
+a {
+    text-decoration: none;
+     color: #4272d7;
+}
+
+.removeUpperBorder{
+      border-top-width: 0px;
+}
+  </style>
+</header>
+<body>
+  <div class="login-page" style="height : 100vh;">
+  <div align="center" class="form">
+    <p class="header">Account Login</p>
+    <form class="login-form">
+        <input type="text" placeholder="Email"/>
+      <input class="removeUpperBorder" type="password" placeholder="Password"/>
+      <button>SIGN IN</button>
+      <p class="message">Forgot <a href="#">Username/ Password?</a></p>
+      <p class="message">Create an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+ 
